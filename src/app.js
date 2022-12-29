@@ -9,7 +9,7 @@ const app = express();
 const publicDir = path.join(__dirname, '../public')
 const viewPath = path.join(__dirname, "../templates/views")
 const partialsPath = path.join(__dirname, '../templates/partials')
-const PORT = process.env.PORT || 3030;
+// const PORT = process.env.PORT || 3030;
 
 
 app.set('view engine', 'hbs')
@@ -103,6 +103,6 @@ app.get('*', (req, res) => {
         name: "Chris"
     })
 })
-app.listen(PORT, () => {
+app.listen(3000, () => {
     console.log("Server is up in port 3000")
 });
